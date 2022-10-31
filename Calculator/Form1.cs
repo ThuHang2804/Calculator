@@ -7,14 +7,24 @@ namespace Calculator
             InitializeComponent();
         }
 
+
         private void btTru_Click(object sender, EventArgs e)
         {
+            int a, b, ketQua;
+            a = int.Parse(txtSoa.Text);
+            b = int.Parse(txtSob.Text);
+            ketQua = a - b;
+            txtkq.Text = ketQua.ToString();
+        }
             
-                double a = double.Parse(txtSoa.Text);
-                double b = double.Parse(txtSob.Text);
-                double c = a - b;
-                txtkq.Text = c.ToString();
-            
+        private void btCong_Click(object sender, EventArgs e)
+        {
+            int a, b, ketQua;
+            a = int.Parse(txtSoa.Text);
+            b = int.Parse(txtSob.Text);
+            ketQua = a + b;
+            txtkq.Text = ketQua.ToString();
+
         }
     }
 }
